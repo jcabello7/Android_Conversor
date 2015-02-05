@@ -46,7 +46,8 @@ public class MainActivity extends ActionBarActivity {
     		RadioButton botoMilles = (RadioButton) findViewById(R.id.opcio2);
     		
     		if (text.getText().toString().length() == 0) {
-    			Toast.makeText(getApplicationContext(), "No has introduït cap valor", Toast.LENGTH_SHORT).show();
+    			//hola k aseh
+    			Toast.makeText(getApplicationContext(), "No has introduï¿½t cap valor", Toast.LENGTH_SHORT).show();
     		}
     		else {
     			float inputValue = Float.parseFloat(text.getText().toString());
