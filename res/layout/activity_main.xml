@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.conversor.MainActivity" >
+
+    <TextView
+        android:id="@+id/text_intro"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/intro_unitats" />
+
+    <EditText
+        android:id="@+id/valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_intro"
+        android:layout_alignStart="@+id/text_intro"
+        android:layout_below="@+id/text_intro"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/opcions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/valor"
+        android:layout_alignLeft="@+id/valor"
+        android:layout_below="@+id/valor"
+        android:layout_marginTop="47dp" >
+
+        <RadioButton
+            android:id="@+id/opcio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/opcio1" />
+
+        <RadioButton
+            android:id="@+id/opcio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/opcio2" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/boto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/opcions"
+        android:layout_below="@+id/opcions"
+        android:layout_marginTop="23dp"
+        android:onClick="conversio"
+        android:text="@string/boto" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/boto"
+        android:layout_alignBottom="@+id/boto"
+        android:layout_alignRight="@+id/valor"
+        android:onClick="reset"
+        android:text="@string/reset" />
+
+</RelativeLayout>

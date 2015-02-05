@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conversor</string>
+    <string name="intro_unitats">Introdueix les unitats a convertir:</string>
+    <string name="selecciona_unitats">Selecciona la unitat introduïda</string>
+    <string name="action_settings">Settings</string>
+    <string name="opcio1">Quilòmetres</string>
+    <string name="opcio2">Milles</string>
+    <string name="boto">Convertir</string>
+    <string name="reset">Reset</string>
+
+</resources>
